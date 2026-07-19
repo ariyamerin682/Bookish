@@ -1,4 +1,4 @@
-const API = 'http://localhost:5000/api';
+const API = '/api';
 const GBOOKS_KEY = 'AIzaSyAeCsiDbyMrsTfgPOfHYHYfbFygQWsPvfg';
 
 let token = localStorage.getItem('bookish_token') || null;
