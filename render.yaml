@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: bookish
+    runtime: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && node server.js
+    envVars:
+      - key: MONGO_URI
+        sync: false
+      - key: JWT_SECRET
+        generateValue: true
+      - key: GOOGLE_BOOKS_API_KEY
+        sync: false
+      - key: NODE_ENV
+        value: production
